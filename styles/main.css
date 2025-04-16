@@ -1,0 +1,373 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 头部样式 */
+.site-header {
+    background: url('../images/background.png') no-repeat center center;
+    background-size: cover;
+    padding: 15px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+}
+
+.site-title {
+    color: #333;
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.user-actions {
+    display: flex;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.login-btn {
+    color: #333;
+    text-decoration: none;
+    padding: 8px 20px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.login-btn:hover {
+    background: white;
+    color: #e60012;
+}
+
+/* 轮播新闻区域 */
+.hero-section {
+    padding: 30px 0;
+    background: #f8f9fa;
+}
+
+.slider-news-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+}
+
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.5s ease;
+}
+
+.news-preview {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.news-list {
+    list-style: none;
+}
+
+.news-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.news-list a {
+    color: #333;
+    text-decoration: none;
+    flex: 1;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.news-list a:hover {
+    color: #e60012;
+}
+
+.news-list .date {
+    color: #999;
+    font-size: 0.9em;
+}
+
+/* 平台卡片区域 */
+.platforms-section {
+    padding: 50px 0;
+}
+
+.platform-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.platform-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.platform-card:hover {
+    transform: translateY(-5px);
+}
+
+.platform-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.platform-card h3 {
+    padding: 15px;
+    text-align: center;
+    color: #e60012;
+}
+
+/* 公告区域 */
+.announcements-section {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.announcements-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.announcement-column {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.announcement-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.announcement-list a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.announcement-list a:hover {
+    color: #e60012;
+}
+
+/* 资源区域 */
+.resources-section {
+    padding: 50px 0;
+}
+
+.resources-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.resource-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.resource-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    transform: translateZ(0);
+}
+
+.resource-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.resource-card h3 {
+    padding: 15px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* 教师展示区域 */
+.teachers-section {
+    padding: 50px 0;
+    background: #f8f9fa;
+}
+
+.teachers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.teacher-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.teacher-card {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+    transform: translateZ(0);
+}
+
+.teacher-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.teacher-card h3 {
+    margin-top: 15px;
+    color: #333;
+}
+
+.teacher-card p {
+    color: #666;
+    margin: 5px 0 15px;
+}
+
+/* 页脚样式 */
+.site-footer {
+    background: #333;
+    color: white;
+    padding: 50px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-links ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    line-height: 2;
+}
+
+.footer-contact p {
+    margin-top: 15px;
+    color: #ccc;
+}
+
+.footer-qrcode {
+    text-align: center;
+}
+
+.footer-qrcode img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    color: #888;
+}
+
+/* 响应式布局 */
+@media (max-width: 992px) {
+    .slider-news-container,
+    .platform-cards,
+    .announcements-grid,
+    .resources-grid,
+    .teachers-grid,
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+
+    .resource-cards,
+    .teacher-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .slider img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .logo-container h1 {
+        font-size: 1.2rem;
+    }
+
+    .resource-cards,
+    .teacher-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .slider img {
+        height: 200px;
+    }
+}
